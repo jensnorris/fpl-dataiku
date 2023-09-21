@@ -72,11 +72,11 @@
   },
   "labels": [],
   "versionTag": {
-    "versionNumber": 5,
+    "versionNumber": 6,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695299859640,
+    "lastModifiedOn": 1695300593373,
     "extendedProperties": {}
   },
   "creationTag": {
