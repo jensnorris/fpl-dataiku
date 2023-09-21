@@ -21,6 +21,14 @@
     {
       "objectId": "rTvjjLog",
       "objectType": "SAVED_MODEL"
+    },
+    {
+      "objectId": "test_scored",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "score_test",
+      "objectType": "RECIPE"
     }
   ],
   "shared": [],
