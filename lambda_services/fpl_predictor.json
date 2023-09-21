@@ -245,11 +245,11 @@
   },
   "deploymentMonitoring": [],
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695306620102,
+    "lastModifiedOn": 1695306771855,
     "extendedProperties": {}
   },
   "creationTag": {
