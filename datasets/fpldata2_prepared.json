@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 6,
+    "versionNumber": 7,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695300593166,
+    "lastModifiedOn": 1695305101753,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -80,7 +80,7 @@
       {"name":"difficulty","type":"bigint"},
       {"name":"opponent_team","type":"string"},
       {"name":"playing_in","type":"string"},
-      {"name":"y","type":"bigint"},
+      {"name":"y2","type":"string"},
       {"name":"expected_assists","type":"double"},
       {"name":"expected_goal_involvements","type":"double"},
       {"name":"expected_goals","type":"double"},
