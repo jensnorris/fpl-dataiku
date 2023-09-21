@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695299007472,
+    "lastModifiedOn": 1695299314656,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -72,12 +72,17 @@
     "columns": [
       {"name":"round","type":"bigint"},
       {"name":"kickoff_time","type":"string"},
+      {"name":"year","type":"string"},
+      {"name":"month","type":"string"},
+      {"name":"day","type":"string"},
+      {"name":"dow","type":"string"},
+      {"name":"hour","type":"string"},
+      {"name":"minute","type":"string"},
       {"name":"is_home","type":"boolean"},
       {"name":"difficulty","type":"bigint"},
       {"name":"opponent_team","type":"string"},
       {"name":"playing_in","type":"string"},
       {"name":"y","type":"bigint"},
-      {"name":"col_0","type":"double"},
       {"name":"assists","type":"double"},
       {"name":"bonus","type":"double"},
       {"name":"clean_sheets","type":"double"},
