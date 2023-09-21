@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695298356094,
+    "lastModifiedOn": 1695300260467,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -77,6 +77,10 @@
       {"name":"opponent_team","type":"string"},
       {"name":"playing_in","type":"string"},
       {"name":"y","type":"bigint"},
+      {"name":"expected_assists","type":"double"},
+      {"name":"expected_goal_involvements","type":"double"},
+      {"name":"expected_goals","type":"double"},
+      {"name":"expected_goals_conceded","type":"double"},
       {"name":"col_0","type":"double"},
       {"name":"assists","type":"double"},
       {"name":"bonus","type":"double"},
@@ -96,10 +100,6 @@
       {"name":"threat","type":"double"},
       {"name":"total_points","type":"double"},
       {"name":"yellow_cards","type":"double"},
-      {"name":"expected_assists","type":"double"},
-      {"name":"expected_goal_involvements","type":"double"},
-      {"name":"expected_goals","type":"double"},
-      {"name":"expected_goals_conceded","type":"double"},
       {"name":"starts","type":"double"},
       {"name":"team_scored","type":"double"}
     ],
