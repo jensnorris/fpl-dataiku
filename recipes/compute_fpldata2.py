@@ -2,6 +2,20 @@
 import dataiku
 import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import requests
+import pandas as pd
+import numpy as np
+from sklearn.cluster import KMeans
+import io
+from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.ensemble import RandomForestRegressor
+import warnings
+from sklearn import metrics
+import pickle
+
 
 # Read recipe inputs
 fpldata = dataiku.Dataset("fpldata")
