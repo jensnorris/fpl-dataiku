@@ -1,0 +1,214 @@
+{
+  "type": "UploadedFiles",
+  "managed": false,
+  "featureGroup": false,
+  "formatType": "csv",
+  "checklists": {
+    "checklists": []
+  },
+  "checks": [],
+  "customMeta": {
+    "kv": {}
+  },
+  "flowOptions": {
+    "virtualizable": false,
+    "rebuildBehavior": "NORMAL",
+    "crossProjectBuildBehavior": "DEFAULT"
+  },
+  "readWriteOptions": {
+    "preserveOrder": false,
+    "writeBuckets": 1,
+    "forceSingleOutputFile": false,
+    "defaultReadOrdering": {
+      "enabled": false,
+      "rules": []
+    }
+  },
+  "formatParams": {
+    "style": "excel",
+    "charset": "utf-8",
+    "separator": ",",
+    "quoteChar": "\"",
+    "escapeChar": "\\",
+    "maxRowChars": 100000000,
+    "dateSerializationFormat": "ISO",
+    "arrayMapFormat": "json",
+    "hiveSeparators": [
+      "\u0002",
+      "\u0003",
+      "\u0004",
+      "\u0005",
+      "\u0006",
+      "\u0007",
+      "\b"
+    ],
+    "skipRowsBeforeHeader": 0,
+    "parseHeaderRow": true,
+    "skipRowsAfterHeader": 0,
+    "probableNumberOfRecords": 35,
+    "normalizeBooleans": false,
+    "normalizeDoubles": true,
+    "readAdditionalColumnsBehavior": "INSERT_IN_DATA_WARNING",
+    "readMissingColumnsBehavior": "DISCARD_SILENT",
+    "readDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "writeDataTypeMismatchBehavior": "DISCARD_WARNING",
+    "fileReadFailureBehavior": "FAIL",
+    "compress": ""
+  },
+  "partitioning": {
+    "ignoreNonMatchingFile": false,
+    "considerMissingRequestedPartitionsAsEmpty": false,
+    "dimensions": []
+  },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jens.jakobsson@solita.se"
+    },
+    "lastModifiedOn": 1695296589675,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jens.jakobsson@solita.se"
+    },
+    "lastModifiedOn": 1695296589675,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "params": {
+    "uploadBoxId": "633a06b0e5f7e708a47682a86035708cd5f9000182a76765b5b314d5bc5a51fb",
+    "uploadConnection": "dataiku-managed-storage",
+    "uploadFSProviderType": "S3",
+    "notReadyIfEmpty": false,
+    "filesSelectionRules": {
+      "mode": "ALL",
+      "excludeRules": [],
+      "includeRules": [],
+      "explicitFiles": []
+    }
+  },
+  "schema": {
+    "columns": [
+      {"name":"name","type":"string"},
+      {"name":"assists","type":"int"},
+      {"name":"bonus","type":"int"},
+      {"name":"clean_sheets","type":"int"},
+      {"name":"creativity","type":"float"},
+      {"name":"element","type":"int"},
+      {"name":"goals_conceded","type":"int"},
+      {"name":"goals_scored","type":"int"},
+      {"name":"ict_index","type":"float"},
+      {"name":"influence","type":"float"},
+      {"name":"kickoff_time","type":"date"},
+      {"name":"minutes","type":"int"},
+      {"name":"opponent_team","type":"string"},
+      {"name":"own_goals","type":"int"},
+      {"name":"penalties_missed","type":"int"},
+      {"name":"penalties_saved","type":"int"},
+      {"name":"red_cards","type":"int"},
+      {"name":"round","type":"int"},
+      {"name":"saves","type":"int"},
+      {"name":"selected","type":"int"},
+      {"name":"threat","type":"float"},
+      {"name":"total_points","type":"int"},
+      {"name":"transfers_balance","type":"int"},
+      {"name":"value","type":"int"},
+      {"name":"was_home","type":"boolean"},
+      {"name":"yellow_cards","type":"int"},
+      {"name":"playing_in","type":"string"},
+      {"name":"difficulty","type":"int"},
+      {"name":"expected_assists","type":"float"},
+      {"name":"expected_goal_involvements","type":"float"},
+      {"name":"expected_goals","type":"float"},
+      {"name":"expected_goals_conceded","type":"float"},
+      {"name":"starts","type":"float"},
+      {"name":"team_scored","type":"float"}
+    ],
+    "userModified": true
+  },
+  "dkuProperties": [],
+  "metrics": {
+    "probes": [
+      {
+        "type": "basic",
+        "enabled": true,
+        "computeOnBuildMode": "PARTITION",
+        "meta": {
+          "name": "Basic data",
+          "level": 0
+        },
+        "configuration": {}
+      },
+      {
+        "type": "records",
+        "enabled": true,
+        "computeOnBuildMode": "NO",
+        "meta": {
+          "name": "Record count",
+          "level": 0
+        },
+        "configuration": {}
+      }
+    ],
+    "engineConfig": {
+      "padRunsWithMetrics": false,
+      "hive": {
+        "active": true,
+        "extraConf": []
+      },
+      "basic": {},
+      "dss": {
+        "active": true,
+        "selection": {
+          "useMemTable": false,
+          "filter": {
+            "distinct": false,
+            "enabled": false
+          },
+          "partitionSelectionMethod": "ALL",
+          "latestPartitionsN": 1,
+          "ordering": {
+            "enabled": false,
+            "rules": []
+          },
+          "samplingMethod": "FULL",
+          "maxRecords": -1,
+          "targetRatio": 0.02,
+          "ascending": true,
+          "withinFirstN": -1,
+          "maxReadUncompressedBytes": -1
+        }
+      },
+      "sql": {
+        "active": true
+      },
+      "impala": {
+        "active": true
+      },
+      "spark": {
+        "active": true,
+        "extraConf": []
+      },
+      "python": {}
+    },
+    "displayedState": {
+      "columns": [],
+      "metrics": [
+        "basic:COUNT_COLUMNS",
+        "basic:COUNT_FILES",
+        "basic:SIZE",
+        "records:COUNT_RECORDS"
+      ]
+    }
+  },
+  "metricsChecks": {
+    "runOnBuild": false,
+    "checks": [],
+    "displayedState": {
+      "checks": []
+    }
+  },
+  "customFields": {}
+}
