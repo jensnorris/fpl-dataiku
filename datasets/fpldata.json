@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695296615112,
+    "lastModifiedOn": 1695296626369,
     "extendedProperties": {}
   },
   "creationTag": {
