@@ -50,37 +50,16 @@
     },
     {
       "preview": false,
-      "designTimeReport": {
-        "report": {
-          "createdColumnCount": 2
-        }
-      },
-      "metaType": "PROCESSOR",
-      "disabled": false,
-      "type": "ColumnSplitter",
-      "params": {
-        "inCol": "kickoff_time",
-        "keepEmptyChunks": false,
-        "limit": 0,
-        "separator": " ",
-        "outColPrefix": "kickoff_time_",
-        "limitOutput": false,
-        "target": "COLUMNS"
-      },
-      "alwaysShowComment": false
-    },
-    {
-      "preview": false,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateParser",
       "params": {
-        "outCol": "kickoff_time_0_parsed",
+        "outCol": "kickoff_time_parsed",
         "formats": [
-          "yyyy-MM-dd"
+          "yyyy-MM-dd HH:mm:ss"
         ],
         "columns": [
-          "kickoff_time_0"
+          "kickoff_time"
         ],
         "timezone_id": "UTC",
         "appliesTo": "SINGLE_COLUMN",
@@ -109,9 +88,13 @@
       "type": "DateComponentsExtractor",
       "params": {
         "outMonthColumn": "month",
+        "outHourColumn": "hour",
+        "outSecondColumn": "",
         "outYearColumn": "year",
-        "column": "kickoff_time_0_parsed",
+        "column": "kickoff_time_parsed",
+        "outDayOfWeekColumn": "week",
         "timezone_id": "UTC",
+        "outMinuteColumn": "",
         "outDayColumn": "day"
       },
       "alwaysShowComment": false
@@ -144,8 +127,10 @@
   },
   "analysisColumnData": {},
   "columnWidthsByName": {
+    "kickoff_time_parsed": 183,
     "opponent_team": 141,
     "is_home": 100,
+    "week": 100,
     "year": 100,
     "bonus": 134,
     "own_goals": 134,
@@ -158,6 +143,7 @@
     "expected_goals_conceded": 188,
     "dow": 100,
     "influence": 169,
+    "second": 100,
     "saves": 134,
     "hour": 100,
     "assists": 134,
@@ -169,8 +155,10 @@
     "day": 100,
     "selected": 141,
     "goals_scored": 134,
+    "monthq": 100,
     "minutes": 134,
     "kickoff_time_0_parsed": 197,
+    "kickoff_time_1_parsed": 197,
     "penalties_missed": 135,
     "yellow_cards": 134,
     "minute": 100,
