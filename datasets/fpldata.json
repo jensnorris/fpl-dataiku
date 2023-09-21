@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695296592215,
+    "lastModifiedOn": 1695296615112,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -106,7 +106,7 @@
   "schema": {
     "columns": [
       {"name":"name","type":"string"},
-      {"name":"assists","type":"int"},
+      {"name":"assists","type":"int","meaning":"LongMeaning"},
       {"name":"bonus","type":"int"},
       {"name":"clean_sheets","type":"int"},
       {"name":"creativity","type":"float"},
