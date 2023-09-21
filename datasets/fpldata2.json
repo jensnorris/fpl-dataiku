@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695297666886,
+    "lastModifiedOn": 1695298356094,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -69,7 +69,40 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"round","type":"bigint"},
+      {"name":"kickoff_time","type":"string"},
+      {"name":"is_home","type":"boolean"},
+      {"name":"difficulty","type":"bigint"},
+      {"name":"opponent_team","type":"string"},
+      {"name":"playing_in","type":"string"},
+      {"name":"y","type":"bigint"},
+      {"name":"col_0","type":"double"},
+      {"name":"assists","type":"double"},
+      {"name":"bonus","type":"double"},
+      {"name":"clean_sheets","type":"double"},
+      {"name":"creativity","type":"double"},
+      {"name":"goals_conceded","type":"double"},
+      {"name":"goals_scored","type":"double"},
+      {"name":"ict_index","type":"double"},
+      {"name":"influence","type":"double"},
+      {"name":"minutes","type":"double"},
+      {"name":"own_goals","type":"double"},
+      {"name":"penalties_missed","type":"double"},
+      {"name":"penalties_saved","type":"double"},
+      {"name":"red_cards","type":"double"},
+      {"name":"saves","type":"double"},
+      {"name":"selected","type":"double"},
+      {"name":"threat","type":"double"},
+      {"name":"total_points","type":"double"},
+      {"name":"yellow_cards","type":"double"},
+      {"name":"expected_assists","type":"double"},
+      {"name":"expected_goal_involvements","type":"double"},
+      {"name":"expected_goals","type":"double"},
+      {"name":"expected_goals_conceded","type":"double"},
+      {"name":"starts","type":"double"},
+      {"name":"team_scored","type":"double"}
+    ],
     "userModified": false
   },
   "dkuProperties": [],
