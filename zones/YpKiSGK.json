@@ -13,6 +13,14 @@
     {
       "objectId": "test",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "train_Predict_y2__multiclass_",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "rTvjjLog",
+      "objectType": "SAVED_MODEL"
     }
   ],
   "shared": [],
