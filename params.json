@@ -215,11 +215,11 @@
     }
   },
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
-      "login": "api:MYDWNWYOTSIFFZCT"
+      "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695297256867,
+    "lastModifiedOn": 1695298818193,
     "extendedProperties": {}
   },
   "creationTag": {
