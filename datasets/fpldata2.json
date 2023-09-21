@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695297315686,
+    "lastModifiedOn": 1695297666886,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -70,7 +70,7 @@
   },
   "schema": {
     "columns": [],
-    "userModified": true
+    "userModified": false
   },
   "dkuProperties": [],
   "metrics": {
