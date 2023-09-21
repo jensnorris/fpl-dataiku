@@ -112,6 +112,64 @@
         "appliesTo": "SINGLE_COLUMN"
       },
       "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "BinnerProcessor",
+      "params": {
+        "output": "y2",
+        "mode": "CUSTOM",
+        "input": "y",
+        "useMin": false,
+        "bins": [
+          {
+            "inf": -10.0,
+            "name": "IG",
+            "sup": 1.0
+          },
+          {
+            "inf": 1.0,
+            "name": "G",
+            "sup": 3.0
+          },
+          {
+            "inf": 3.0,
+            "name": "VG",
+            "sup": 5.0
+          },
+          {
+            "inf": 5.0,
+            "name": "MVG",
+            "sup": 7.0
+          },
+          {
+            "inf": 7.0,
+            "name": "MVG+"
+          }
+        ],
+        "min": 0.0,
+        "useDecimalSeparatorFromLocale": false,
+        "max": 0.0,
+        "useMax": false,
+        "width": 1.0
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "y"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
     }
   ],
   "maxProcessedMemTableBytes": -1,
@@ -163,6 +221,7 @@
     "assists": 134,
     "col_0": 141,
     "playing_in": 120,
+    "y2": 100,
     "expected_assists": 169,
     "creativity": 169,
     "starts": 134,
