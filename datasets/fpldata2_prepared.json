@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 2,
+    "versionNumber": 3,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695299464456,
+    "lastModifiedOn": 1695299573214,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -71,11 +71,11 @@
   "schema": {
     "columns": [
       {"name":"round","type":"bigint"},
-      {"name":"kickoff_time","type":"string","meaning":"Text"},
       {"name":"kickoff_time_0","type":"string"},
-      {"name":"year","type":"string"},
-      {"name":"month","type":"string"},
-      {"name":"day","type":"string"},
+      {"name":"kickoff_time_0_parsed","type":"date"},
+      {"name":"year","type":"bigint"},
+      {"name":"month","type":"bigint"},
+      {"name":"day","type":"bigint"},
       {"name":"kickoff_time_1","type":"string"},
       {"name":"is_home","type":"boolean"},
       {"name":"difficulty","type":"bigint"},
