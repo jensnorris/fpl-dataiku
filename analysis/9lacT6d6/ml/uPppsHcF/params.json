@@ -4033,7 +4033,7 @@
     },
     "metrics": {
       "customMetrics": [],
-      "evaluationMetric": "ROC_AUC",
+      "evaluationMetric": "ACCURACY",
       "customEvaluationMetricGIB": true,
       "customEvaluationMetricNeedsProba": false,
       "costMatrixWeights": {
@@ -4065,9 +4065,9 @@
         "enabled": false,
         "rules": []
       },
-      "samplingMethod": "HEAD_SEQUENTIAL",
+      "samplingMethod": "RANDOM_FIXED_RATIO",
       "maxRecords": 100000,
-      "targetRatio": 0.02,
+      "targetRatio": 0.6,
       "ascending": true,
       "withinFirstN": -1,
       "maxReadUncompressedBytes": -1
