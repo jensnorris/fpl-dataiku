@@ -29,8 +29,44 @@
   },
   "explorationFilters": [],
   "columnUseScientificNotationByName": {},
-  "exploreUIParams": {},
-  "steps": [],
+  "origin": "PREPARE_RECIPE",
+  "exploreUIParams": {
+    "autoRefresh": true
+  },
+  "steps": [
+    {
+      "preview": false,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnsSelector",
+      "params": {
+        "columns": [
+          "col_0"
+        ],
+        "keep": false,
+        "appliesTo": "SINGLE_COLUMN"
+      },
+      "alwaysShowComment": false
+    },
+    {
+      "preview": true,
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "DateComponentsExtractor",
+      "params": {
+        "outMonthColumn": "month",
+        "outHourColumn": "hour",
+        "outSecondColumn": "",
+        "outYearColumn": "year",
+        "column": "kickoff_time",
+        "outDayOfWeekColumn": "dow",
+        "timezone_id": "UTC",
+        "outMinuteColumn": "minute",
+        "outDayColumn": "day"
+      },
+      "alwaysShowComment": false
+    }
+  ],
   "maxProcessedMemTableBytes": -1,
   "previewMode": "ALL_ROWS",
   "vizSampling": {
@@ -57,7 +93,48 @@
     "autoRefreshSample": false
   },
   "analysisColumnData": {},
-  "columnWidthsByName": {},
+  "columnWidthsByName": {
+    "opponent_team": 141,
+    "is_home": 100,
+    "year": 100,
+    "bonus": 134,
+    "own_goals": 134,
+    "clean_sheets": 134,
+    "goals_conceded": 148,
+    "total_points": 148,
+    "kickoff_time": 148,
+    "red_cards": 134,
+    "team_scored": 141,
+    "expected_goals_conceded": 188,
+    "dow": 100,
+    "influence": 169,
+    "saves": 134,
+    "hour": 100,
+    "assists": 134,
+    "col_0": 141,
+    "playing_in": 120,
+    "expected_assists": 169,
+    "creativity": 169,
+    "starts": 134,
+    "day": 100,
+    "selected": 141,
+    "goals_scored": 134,
+    "minutes": 134,
+    "penalties_missed": 135,
+    "yellow_cards": 134,
+    "minute": 100,
+    "difficulty": 100,
+    "expected_goal_involvements": 210,
+    "expected_goals": 134,
+    "round": 100,
+    "month": 100,
+    "y": 100,
+    "threat": 141,
+    "ict_index": 169,
+    "penalties_saved": 134,
+    "kickoff_time_1": 120,
+    "kickoff_time_0": 148
+  },
   "sorting": [],
   "globalSearchQuery": "",
   "coloring": {
