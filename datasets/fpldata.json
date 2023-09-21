@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695296643649,
+    "lastModifiedOn": 1695296651139,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -115,7 +115,7 @@
       {"name":"goals_scored","type":"int"},
       {"name":"ict_index","type":"float"},
       {"name":"influence","type":"float"},
-      {"name":"kickoff_time","type":"date"},
+      {"name":"kickoff_time","type":"date","meaning":"Date"},
       {"name":"minutes","type":"int"},
       {"name":"opponent_team","type":"string"},
       {"name":"own_goals","type":"int"},
