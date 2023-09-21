@@ -3,37 +3,44 @@
   "centileSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 80
     }
   ],
-  "defaultOutputIndex": 1,
   "preFilter": {
     "distinct": false,
     "enabled": false
   },
+  "defaultOutputIndex": 1,
   "seed": 1337,
   "randomColumns": [],
-  "centileOrders": [],
+  "centileOrders": [
+    {
+      "column": "y",
+      "desc": false
+    }
+  ],
   "rangeSetTime": false,
   "randomSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 80
     }
   ],
   "randomColumnsSplits": [
     {
       "outputIndex": 0,
-      "share": 50.0
+      "share": 50
     }
   ],
   "computedColumns": [],
   "writeComputedColumnsInOutput": false,
+  "mode": "RANDOM",
   "centileTDigest": false,
   "valueSplits": [
     {
       "outputIndex": 0,
-      "caseSensitive": false
+      "caseSensitive": false,
+      "value": ""
     }
   ],
   "rangeSplits": [
@@ -89,6 +96,152 @@
         "uiData": {
           "mode": "\u0026\u0026",
           "conditions": []
+        },
+        "$status": {
+          "schema": {
+            "columns": [
+              {
+                "name": "round",
+                "type": "bigint"
+              },
+              {
+                "name": "year",
+                "type": "bigint"
+              },
+              {
+                "name": "month",
+                "type": "bigint"
+              },
+              {
+                "name": "day",
+                "type": "bigint"
+              },
+              {
+                "name": "week",
+                "type": "bigint"
+              },
+              {
+                "name": "hour",
+                "type": "bigint"
+              },
+              {
+                "name": "is_home",
+                "type": "boolean"
+              },
+              {
+                "name": "difficulty",
+                "type": "bigint"
+              },
+              {
+                "name": "opponent_team",
+                "type": "string"
+              },
+              {
+                "name": "playing_in",
+                "type": "string"
+              },
+              {
+                "name": "y",
+                "type": "bigint"
+              },
+              {
+                "name": "expected_assists",
+                "type": "double"
+              },
+              {
+                "name": "expected_goal_involvements",
+                "type": "double"
+              },
+              {
+                "name": "expected_goals",
+                "type": "double"
+              },
+              {
+                "name": "expected_goals_conceded",
+                "type": "double"
+              },
+              {
+                "name": "assists",
+                "type": "double"
+              },
+              {
+                "name": "bonus",
+                "type": "double"
+              },
+              {
+                "name": "clean_sheets",
+                "type": "double"
+              },
+              {
+                "name": "creativity",
+                "type": "double"
+              },
+              {
+                "name": "goals_conceded",
+                "type": "double"
+              },
+              {
+                "name": "goals_scored",
+                "type": "double"
+              },
+              {
+                "name": "ict_index",
+                "type": "double"
+              },
+              {
+                "name": "influence",
+                "type": "double"
+              },
+              {
+                "name": "minutes",
+                "type": "double"
+              },
+              {
+                "name": "own_goals",
+                "type": "double"
+              },
+              {
+                "name": "penalties_missed",
+                "type": "double"
+              },
+              {
+                "name": "penalties_saved",
+                "type": "double"
+              },
+              {
+                "name": "red_cards",
+                "type": "double"
+              },
+              {
+                "name": "saves",
+                "type": "double"
+              },
+              {
+                "name": "selected",
+                "type": "double"
+              },
+              {
+                "name": "threat",
+                "type": "double"
+              },
+              {
+                "name": "total_points",
+                "type": "double"
+              },
+              {
+                "name": "yellow_cards",
+                "type": "double"
+              },
+              {
+                "name": "starts",
+                "type": "double"
+              },
+              {
+                "name": "team_scored",
+                "type": "double"
+              }
+            ]
+          }
         },
         "distinct": false,
         "enabled": true
