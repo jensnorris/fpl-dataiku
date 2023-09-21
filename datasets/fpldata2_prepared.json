@@ -37,11 +37,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 4,
+    "versionNumber": 5,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695299805199,
+    "lastModifiedOn": 1695299859390,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -71,7 +71,6 @@
   "schema": {
     "columns": [
       {"name":"round","type":"bigint"},
-      {"name":"kickoff_time_parsed","type":"date"},
       {"name":"year","type":"bigint"},
       {"name":"month","type":"bigint"},
       {"name":"day","type":"bigint"},
