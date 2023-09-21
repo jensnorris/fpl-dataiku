@@ -196,6 +196,14 @@
       "checks": []
     }
   },
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jens.jakobsson@solita.se"
+    },
+    "lastModifiedOn": 1695296911602,
+    "extendedProperties": {}
+  },
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
