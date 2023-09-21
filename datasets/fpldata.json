@@ -61,11 +61,11 @@
     "dimensions": []
   },
   "versionTag": {
-    "versionNumber": 7,
+    "versionNumber": 8,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695296680219,
+    "lastModifiedOn": 1695296681772,
     "extendedProperties": {}
   },
   "creationTag": {
@@ -110,7 +110,7 @@
       {"name":"bonus","type":"int"},
       {"name":"clean_sheets","type":"int"},
       {"name":"creativity","type":"float"},
-      {"name":"element","type":"string","meaning":"DoubleMeaning"},
+      {"name":"element","type":"string"},
       {"name":"goals_conceded","type":"int"},
       {"name":"goals_scored","type":"int"},
       {"name":"ict_index","type":"float"},
