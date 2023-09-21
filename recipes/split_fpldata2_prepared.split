@@ -141,8 +141,8 @@
                 "type": "string"
               },
               {
-                "name": "y",
-                "type": "bigint"
+                "name": "y2",
+                "type": "string"
               },
               {
                 "name": "expected_assists",
