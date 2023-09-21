@@ -49,19 +49,36 @@
       "alwaysShowComment": false
     },
     {
+      "preview": false,
+      "designTimeReport": {
+        "report": {
+          "createdColumnCount": 2
+        }
+      },
+      "metaType": "PROCESSOR",
+      "disabled": false,
+      "type": "ColumnSplitter",
+      "params": {
+        "inCol": "kickoff_time",
+        "keepEmptyChunks": false,
+        "limit": 0,
+        "separator": " ",
+        "outColPrefix": "kickoff_time_",
+        "limitOutput": false,
+        "target": "COLUMNS"
+      },
+      "alwaysShowComment": false
+    },
+    {
       "preview": true,
       "metaType": "PROCESSOR",
       "disabled": false,
       "type": "DateComponentsExtractor",
       "params": {
         "outMonthColumn": "month",
-        "outHourColumn": "hour",
-        "outSecondColumn": "",
         "outYearColumn": "year",
-        "column": "kickoff_time",
-        "outDayOfWeekColumn": "dow",
+        "column": "kickoff_time_0",
         "timezone_id": "UTC",
-        "outMinuteColumn": "minute",
         "outDayColumn": "day"
       },
       "alwaysShowComment": false
