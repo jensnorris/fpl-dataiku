@@ -15,9 +15,9 @@ fpldata_df = fpldata.get_dataframe()
 
 def get_player_X_and_y(name):
     df_player = fpldata_df.loc[fpldata_df['name'] == name]
-    df_actual_game_attributes = df_player.loc[:, ['round', 'kickoff_time', 'was_home', 'difficulty', 'opponent_team', 'playing_in', 'total_points']]
+    df_actual_game_attributes = df_player.loc[:, ['round', 'kickoff_time', 'was_home', 'difficulty', 'opponent_team', 'playing_in', 'total_points', 'expected_assists', 'expected_goal_involvements', 'expected_goals', 'expected_goals_conceded']]
     df_actual_game_attributes.rename({'total_points': 'y'}, axis=1, inplace=True)
-    df_rolling_mean_attributes = df_player.drop(['round', 'name', 'element', 'kickoff_time', 'difficulty', 'opponent_team', 'transfers_balance', 'value', 'was_home', 'playing_in'], axis=1).shift(1).rolling(3).mean()
+    df_rolling_mean_attributes = df_player.drop(['round', 'name', 'element', 'kickoff_time', 'difficulty', 'opponent_team', 'transfers_balance', 'value', 'was_home', 'playing_in', 'expected_assists', 'expected_goal_involvements', 'expected_goals', 'expected_goals_conceded'], axis=1).shift(1).rolling(3).mean()
     player_df_stats_3past_games = df_actual_game_attributes.join(df_rolling_mean_attributes).dropna()
     player_df_stats_3past_games.rename({'was_home': 'is_home'}, axis=1, inplace=True)
     return player_df_stats_3past_games
