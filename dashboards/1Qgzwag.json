@@ -1,0 +1,36 @@
+{
+  "pages": [
+    {
+      "id": "X8I6PIQ",
+      "grid": {
+        "tiles": []
+      },
+      "showTitle": false
+    }
+  ],
+  "owner": "jens.jakobsson@solita.se",
+  "listed": true,
+  "name": "FPL\u0027s default dashboard",
+  "showGrid": true,
+  "versionTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jens.jakobsson@solita.se"
+    },
+    "lastModifiedOn": 1695296100781,
+    "extendedProperties": {}
+  },
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "jens.jakobsson@solita.se"
+    },
+    "lastModifiedOn": 1695296100781,
+    "extendedProperties": {}
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
