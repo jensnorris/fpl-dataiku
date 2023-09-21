@@ -1,7 +1,20 @@
 {
   "name": "ML",
   "color": "#4B8021",
-  "items": [],
+  "items": [
+    {
+      "objectId": "train",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "split_fpldata2_prepared",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "test",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "tags": [],
   "customFields": {},
