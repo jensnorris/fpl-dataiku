@@ -33,17 +33,13 @@ def get_player_X_and_y(name):
     df_rolling_mean_attributes = df_player.drop(['round', 'name', 'element', 'kickoff_time', 'difficulty', 'opponent_team', 'transfers_balance', 'value', 'was_home', 'playing_in'], axis=1).shift(1).rolling(3).mean()
     player_df_stats_3past_games = df_actual_game_attributes.join(df_rolling_mean_attributes).dropna()
     player_df_stats_3past_games.rename({'was_home': 'is_home'}, axis=1, inplace=True)
-    Xy = player_df_stats_3past_games
-    return Xy
+    return player_df_stats_3past_games
 
 def get_all_players_df():
     df_Xy = pd.DataFrame()
     for p in fpldata_df.name.unique().tolist():
-        try:
-            Xy = get_player_X_and_y(p)
-            df_Xy = df_Xy.append(Xy)
-        except:
-            print('exception')
+        Xy = get_player_X_and_y(p)
+        df_Xy = df_Xy.append(Xy)
     return df_Xy
 
 df_Xy = get_all_players_df()
