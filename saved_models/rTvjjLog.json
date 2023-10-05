@@ -4,7 +4,7 @@
   "rebuildBehavior": "EXPLICIT",
   "name": "Predict y2 (multiclass)",
   "contentType": "prediction/py_memory",
-  "activeVersion": "initial",
+  "activeVersion": "1696491701688",
   "inlineVersions": [],
   "conditionalOutputs": [],
   "partitioning": {
@@ -3256,11 +3256,11 @@
   "lastTrainIndex": 1,
   "lastTrainJobId": "",
   "versionTag": {
-    "versionNumber": 0,
+    "versionNumber": 1,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1695306242511,
+    "lastModifiedOn": 1696491806426,
     "extendedProperties": {}
   },
   "creationTag": {
