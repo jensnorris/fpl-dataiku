@@ -3253,14 +3253,14 @@
     "predictionDisplayCharts": [],
     "labels": []
   },
-  "lastTrainIndex": 1,
-  "lastTrainJobId": "",
+  "lastTrainIndex": 2,
+  "lastTrainJobId": "Build_from_compute_fpldata2_2023-10-05T07-38-41.574",
   "versionTag": {
-    "versionNumber": 1,
+    "versionNumber": 2,
     "lastModifiedBy": {
       "login": "jens.jakobsson@solita.se"
     },
-    "lastModifiedOn": 1696491806426,
+    "lastModifiedOn": 1696491806491,
     "extendedProperties": {}
   },
   "creationTag": {
